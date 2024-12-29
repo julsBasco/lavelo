@@ -50,8 +50,15 @@ class Gift extends Component {
                     <div className="col-12">
                       <div className="section-title text-center">
                           <h2>Gift Registration</h2>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.</p>
+                          <p>Your presence and prayers are the best gifts for us. 
+                            However, if you desire to give, a monetary gift will be helpful as we begin our new life of service together
+                          </p>
                       </div>
+                  </div>
+                  <div className="col-12" >
+                    <p> Name: Julian Rexor Basco</p>
+                    <p> GCASH: 09282759238</p>
+                    <p> UNIONBANK: 109485446010</p>
                   </div>
                   <div className="row gift-item">
                       <div className="col-lg-12">
