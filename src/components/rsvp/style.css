@@ -5,21 +5,25 @@
     background-attachment: fixed;
     z-index: 1;
 }
+
 .rsvp-wrap {
     background: rgba(255, 255, 255, .9);
     padding: 70px;
 }
-.rsvp-wrap .section-title h2{
+
+.rsvp-wrap .section-title h2 {
     margin-bottom: 0;
     padding-bottom: 0px;
 }
 
-.rsvp-wrap .section-title h2:before{
-   display: none;
+.rsvp-wrap .section-title h2:before {
+    display: none;
 }
-.rsvp-wrap .section-title{
+
+.rsvp-wrap .section-title {
     margin-bottom: 30px;
 }
+
 .contact-form input {
     width: 100%;
     height: 45px;
@@ -42,16 +46,17 @@ select.form-control:not([size]):not([multiple]) {
     border-radius: 5px;
     color: #666;
     font-size: 14px;
-    -webkit-appearance:none;
-    -ms-appearance:none;
-    -o-appearance:none;
-    appearance:none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
     -moz-appearance: none;
-    background:#fff url(../../images/select-icon.png) no-repeat calc(100% - 15px) center;
+    background: #fff url(../../images/select-icon.png) no-repeat calc(100% - 15px) center;
     position: relative;
     border: none;
 
 }
+
 .contact-textarea {
     width: 100%;
     height: 170px;
@@ -62,20 +67,21 @@ select.form-control:not([size]):not([multiple]) {
     border-radius: 5px;
 }
 
-.contact-form p{
+.contact-form p {
     color: red;
     font-size: 14px;
 }
+
 .section-title p {
     padding-top: 10px;
-    color:#5a5858;
+    color: #5a5858;
 }
 
 .contact-form button {
     background: none;
     border: none;
     padding: 5px 15px 8px;
-    background: #649e93;
+    background: #aa7970;
     color: #fff;
     border-radius: 5px;
     margin-top: 20px;
@@ -85,27 +91,32 @@ select.form-control:not([size]):not([multiple]) {
 .guest-2 button#submit {
     background: #9a8c40;
 }
+
 .contact-form button:hover {
     background: #3f7267;
 }
+
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
 
     color: #666;
     font-size: 14px;
 }
+
 ::-moz-placeholder {
     /* Firefox 19+ */
 
     color: #666;
     font-size: 14px;
 }
+
 :-ms-input-placeholder {
     /* IE 10+ */
 
     color: #666;
     font-size: 14px;
 }
+
 :-moz-placeholder {
     /* Firefox 18- */
 

@@ -91,7 +91,7 @@ person-area
 
 .person-content h3 {
     font-size: 24px;
-    color: #649e93;
+    color: #aa7970;
     font-family: 'Muli', sans-serif;
 }
 
@@ -101,7 +101,7 @@ person-area
 
 .person-btn ul {
     justify-content: center;
-    margin-bottom: 30px!important;
+    margin-bottom: 30px !important;
     border-bottom: 1px solid #8ec7bc5e;
 }
 
@@ -113,20 +113,22 @@ person-area
     transition: all .3s;
     font-size: 25px;
     border-right: 1px solid #fff;
-    color:#fff;
+    color: #fff;
     border-radius: 0;
     cursor: pointer;
 }
+
 .person-btn ul li:last-child a {
-     border-right:none;
+    border-right: none;
 }
-.person-btn .nav-tabs .nav-item.show .nav-link, 
-.person-btn .nav-tabs .nav-link.active{
-    background: #4e7b72;
-    color: #fff;
-}
-.person-btn .nav-tabs .nav-item .nav-link:hover{
+
+.person-btn .nav-tabs .nav-item.show .nav-link,
+.person-btn .nav-tabs .nav-link.active {
     background: #4e7b72;
     color: #fff;
 }
 
+.person-btn .nav-tabs .nav-item .nav-link:hover {
+    background: #4e7b72;
+    color: #fff;
+}

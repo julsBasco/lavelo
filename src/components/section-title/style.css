@@ -3,7 +3,7 @@
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 50px;
-    color: #649e93;
+    color: #aa7970;
     padding-bottom: 30px;
 }
 
@@ -16,11 +16,12 @@
     bottom: -16px;
     left: 41%;
 }
-.section-title{
+
+.section-title {
     text-align: center;
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {
     .section-title h2 {
         margin-bottom: 30px;
         font-size: 30px;
