@@ -8,13 +8,15 @@ Story-Area
     margin-bottom: 2em
 }
 
-.story-top, .story-bottom {
+.story-top,
+.story-bottom {
     position: absolute;
     top: 40px;
     left: 50%;
     z-index: 20;
     margin-left: -23px;
 }
+
 .story-bottom {
     bottom: 0;
     top: auto
@@ -30,16 +32,19 @@ Story-Area
     z-index: 20;
     display: block;
     font-size: 50px;
-    color: #5e9a8d82;
+    color: #aa797082;
 }
+
 .story-area.story-style-2 .story-top:before,
 .story-area.story-style-2 .story-bottom:before {
     color: #9a8c40;
     opacity: .5;
 }
+
 .story-top:before {
     top: -3px;
 }
+
 .story .content-wrapper::before {
     content: '';
     position: absolute;
@@ -49,10 +54,12 @@ Story-Area
     width: 4px;
     background: #E8EFED;
 }
+
 .story-area.story-style-2 .story .content-wrapper::before {
-    background:#9a8c40a6;
+    background: #9a8c40a6;
     opacity: .2;
 }
+
 .story .item {
     position: relative;
     clear: both;
@@ -69,6 +76,7 @@ Story-Area
     -o-transition: all .4s ease;
     transition: all .4s ease
 }
+
 .story .item:not(:first-child) {
     margin-top: -250px;
 }
@@ -88,7 +96,8 @@ Story-Area
 .story .item .story-content:hover {
     background: #f2f9f7;
 }
-.story-area.story-style-2  .story .item .story-content:hover {
+
+.story-area.story-style-2 .story .item .story-content:hover {
     background: #9a8c401a;
 }
 
@@ -97,15 +106,18 @@ Story-Area
     margin: 0;
     width: 100%
 }
+
 .story .item .story-content>p {
     margin-bottom: 20px;
 }
+
 .story a.story-btn {
     font-weight: 500;
-    color: #5e9a8d;
+    color: #aa7970;
     text-transform: uppercase;
     font-size: 17px;
 }
+
 .story .item:nth-child(odd) {
     float: left;
 }
@@ -160,6 +172,7 @@ Story-Area
 .item:nth-child(even) .story-content:hover:after {
     border-right-color: #f2f9f7;
 }
+
 .item:nth-child(even) .story-area.story-style-2 .story-content:hover:after {
     border-right-color: #f2f9f7;
 }
@@ -172,8 +185,9 @@ Story-Area
     margin-bottom: 2px;
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
-    color: #5e9a8d;
+    color: #aa7970;
 }
+
 .story-area.story-style-2 .story .story-content h2 {
     margin-bottom: 2px;
     font-family: 'Great Vibes', cursive;
@@ -198,14 +212,17 @@ Story-Area
 .story .item:nth-child(even) .story-content {
     text-align: right;
 }
+
 .story .item:nth-child(even) .story-content .date {
     text-align: right;
     left: -140%
 }
+
 .btn2 a {
     background: #9a8c40;
     color: #fff;
 }
+
 .story .story-icon {
     position: absolute;
     top: 50%;
@@ -218,10 +235,11 @@ Story-Area
     line-height: 60px;
     border-radius: 50%;
     background: #E8EFED;
-    content:"\f108";
+    content: "\f108";
     font-family: "Flaticon";
     border: 5px solid #d9ece7;
 }
+
 .story-area.story-style-2 .story .story-icon {
     position: absolute;
     top: 50%;
@@ -233,19 +251,22 @@ Story-Area
     font-size: 18px;
     line-height: 60px;
     border-radius: 50%;
-    background:#9a8c4061;
-    content:"\f108";
+    background: #9a8c4061;
+    content: "\f108";
     font-family: "Flaticon";
     border: 5px solid #9a8c403b;
 }
+
 .story-icon span:before {
     font-size: 30px;
     line-height: 30px;
-    color: #5e9a8d;
+    color: #aa7970;
 }
+
 .story-area.story-style-2 .story-icon span:before {
     color: #9a8c40;
 }
+
 .story .item:nth-child(even) .story-icon {
     right: auto;
     left: 0
@@ -256,6 +277,7 @@ Story-Area
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg)
 }
+
 .story .story-icon span:before {
     margin-left: 0px;
 }
@@ -263,10 +285,11 @@ Story-Area
 .story-area a.theme-btn {
     color: #333;
 }
+
 .story-area a.theme-btn:hover {
     color: #5e9a8e;
 }
 
-.story-area.story-style-2 a.theme-btn:hover{
+.story-area.story-style-2 a.theme-btn:hover {
     color: #9a8c40;
 }
