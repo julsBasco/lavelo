@@ -4,7 +4,7 @@
 
 .couple-img {
     overflow: hidden;
-    border: 2px solid #5e9a8e;
+    border: 2px solid #aa7970;
     border-radius: 100%;
 }
 
@@ -27,12 +27,12 @@
 }
 
 .couple-wrap2.couple-s-3 .couple-text i {
-    color: #5e9a8e;
+    color: #aa7970;
 }
 
 .couple-content h3 {
     font-size: 21px;
-    color:#5e9a8e;
+    color: #aa7970;
     font-family: 'Muli', sans-serif;
     text-transform: uppercase;
 }
@@ -54,13 +54,14 @@
 .couple-content {
     text-align: center;
 }
+
 .couple-text {
     padding: 23px 0;
 }
 
 .social-icon ul li a {
     font-size: 24px;
-    color: #5e9a8e;
+    color: #aa7970;
 }
 
 .social-icon ul li {
