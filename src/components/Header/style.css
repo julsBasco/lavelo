@@ -34,7 +34,7 @@
 }
 
 .logo h2 a {
-    font-size: 36px;
+    font-size: 20px;
     font-family: 'Great Vibes', cursive;
     color: #fff;
 }
@@ -101,6 +101,8 @@
     height: 60px;
 
 }
+
+
 
 @media(max-width:1440px) {
     .header-menu .submenu2 {

@@ -16,7 +16,7 @@ const Header = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-4 col-10">
                             <div className="logo">
-                                <h2><Link to='/home'><img className="logo-image" src={JCLogo} /> Julian and Charm</Link></h2>
+                                <h2><Link to='/home'><img className="logo-image" src={JCLogo} /> Julian and Charmaine</Link></h2>
                             </div>
                         </div>
                         <div className="col-lg-8">
