@@ -42,7 +42,7 @@ class SimpleSlider extends Component {
                   <h4>WERE GETTING MARRIED</h4>
                 </div>
                 <div className="slide-title">
-                  <h2></h2>
+                  <h2>Julian and Charmaine</h2>
                 </div>
                 <div className="slide-text">
                   <p></p>
