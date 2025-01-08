@@ -1,12 +1,12 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import MobileMenu2 from '../../components/MobileMenu2'
 
 const Header2 = () => {
 
-    return(
-          <div className="Header_root">
-            <div  className="header">
+    return (
+        <div className="Header_root">
+            <div className="header">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-10">
@@ -41,12 +41,12 @@ const Header2 = () => {
                             </div>
                         </div>
                         <div className="col-2">
-                            <MobileMenu2/>
+                            <MobileMenu2 />
                         </div>
                     </div>
                 </div>
-             </div>
-          </div>
+            </div>
+        </div>
     )
 }
 

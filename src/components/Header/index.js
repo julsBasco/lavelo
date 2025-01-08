@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import MobileMenu from '../../components/MobileMenu'
-import JCLogo from '../../images/header/JC Monogram.png'
 
 import './style.css'
 
@@ -16,7 +14,7 @@ const Header = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const style = scroll > 80 ? { color: "#636363" } : { color: "#efe5dc" };
+    const style = scroll > 80 ? { color: "#636363" } : { color: "#636363" };
 
     return (
 

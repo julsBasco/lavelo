@@ -10,7 +10,7 @@ const Saveday = () => {
                 <div className="container">
                     <div className="count-down-item count-down-item2">
                         <div className="row">
-                            <div className="col-12 col-md-4 section-area">
+                            <div className="col-12 col-md-4 section-area align-items-center">
                                 <div className="section-sub"></div>
                                 <h2 className="big"><span>- - - - Save the date - - - - -</span> 04-23-25</h2>
                             </div>
