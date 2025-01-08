@@ -20,7 +20,7 @@ const Header = () => {
                                 <h2><Link to='/home'><img className="logo-image" src={JCLogo} /> Julian and Charmaine</Link></h2>
                             </div>
                         </div> */}
-                        <div className="col-lg-8">
+                        <div className="col-lg-9">
                             <div className="header-menu d-lg-block d-none">
                                 <ul className="mobail-menu d-flex">
                                     <li><Link to='/'>Home</Link>
