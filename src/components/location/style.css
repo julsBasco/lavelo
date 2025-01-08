@@ -26,7 +26,7 @@
 
 .service-area-menu ul {
     margin-top: 50px;
-    background: #aa7970;
+    background: #efe5dc;
 }
 
 .ceromony-content2 {
@@ -60,12 +60,12 @@
 
 .ceromony-content h3 {
     font-size: 30px;
-    color: #aa7970;
+    color: #efe5dc;
     margin-bottom: 16px;
 }
 
 .ceromony-content .location-btn {
-    color: #aa7970;
+    color: #efe5dc;
     font-weight: 600;
     display: inline-block;
     max-width: 130px;
@@ -76,7 +76,7 @@
 
 .ceromony-content .btn.location-btn:hover {
     background: none !important;
-    color: #aa7970;
+    color: #efe5dc;
 }
 
 .ceromony-content .location-btn:focus {
@@ -136,5 +136,5 @@
     border-radius: 50%;
     z-index: 11;
     background: #fff;
-    border: 2px solid #aa7970;
+    border: 2px solid #efe5dc;
 }

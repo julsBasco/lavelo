@@ -91,7 +91,7 @@ person-area
 
 .person-content h3 {
     font-size: 24px;
-    color: #aa7970;
+    color: #efe5dc;
     font-family: 'Muli', sans-serif;
 }
 
@@ -109,7 +109,7 @@ person-area
     border: none;
     display: inline-block;
     padding: 10px 30px;
-    background: #aa7970;
+    background: #efe5dc;
     transition: all .3s;
     font-size: 25px;
     border-right: 1px solid #fff;

@@ -4,11 +4,11 @@
 
 .slick-dots li button:before {
   font-size: 14px;
-  color: #aa7970;
+  color: #efe5dc;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #aa7970;
+  color: #efe5dc;
 }
 
 .item1 {
@@ -159,7 +159,7 @@
 
 .slick-prev:hover,
 .slick-next:hover {
-  background: #aa7970;
+  background: #efe5dc;
   border: none;
 }
 

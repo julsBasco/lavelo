@@ -40,7 +40,7 @@
 
 .blog-sidebar .widget h3:after {
   content: "";
-  background-color: #aa7970;
+  background-color: #efe5dc;
   width: 35px;
   height: 2px;
   position: absolute;
@@ -83,14 +83,14 @@
 }
 
 .blog-sidebar .search-widget form button {
-  background: #aa7970;
+  background: #efe5dc;
   width: 50px;
   height: 50px;
   line-height: 45px;
   text-align: center;
   font-size: 18px;
   font-size: 1.125rem;
-  color: #aa7970;
+  color: #efe5dc;
   border: 0;
   outline: 0;
   position: absolute;
@@ -116,7 +116,7 @@
 
 .blog-sidebar .category-widget ul a:hover,
 .blog-sidebar .category-widget ul li:hover:before {
-  color: #aa7970;
+  color: #efe5dc;
 }
 
 .blog-sidebar .category-widget ul li:last-child a {
@@ -165,7 +165,7 @@
 }
 
 .blog-sidebar .recent-post-widget .post h4 a:hover {
-  color: #aa7970;
+  color: #efe5dc;
 }
 
 .blog-sidebar .tag-widget {
@@ -236,7 +236,7 @@
 }
 
 .blog-pg-section .post .details a:hover {
-  color: #aa7970;
+  color: #efe5dc;
 }
 
 .blog-pg-section .entry-meta {
@@ -276,7 +276,7 @@
 }
 
 .blog-pg-section .entry-meta li a {
-  color: #aa7970;
+  color: #efe5dc;
 }
 
 .blog-pg-section .entry-meta img {
@@ -309,7 +309,7 @@
 }
 
 .blog-pg-section .details h3 a:hover {
-  color: #aa7970;
+  color: #efe5dc;
 }
 
 .blog-pg-section .details p {
@@ -318,7 +318,7 @@
 
 .blog-pg-section .details .read-more {
   font-weight: 500;
-  color: #aa7970;
+  color: #efe5dc;
   text-transform: uppercase;
 }
 
@@ -503,5 +503,5 @@
 }
 
 .blog-pg-section .entry-meta li a {
-  color: #aa7970 !important;
+  color: #efe5dc !important;
 }

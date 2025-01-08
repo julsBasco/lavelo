@@ -32,7 +32,7 @@ Story-Area
     z-index: 20;
     display: block;
     font-size: 50px;
-    color: #aa797082;
+    color: #efe5dc82;
 }
 
 .story-area.story-style-2 .story-top:before,
@@ -113,7 +113,7 @@ Story-Area
 
 .story a.story-btn {
     font-weight: 500;
-    color: #aa7970;
+    color: #efe5dc;
     text-transform: uppercase;
     font-size: 17px;
 }
@@ -185,7 +185,7 @@ Story-Area
     margin-bottom: 2px;
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
-    color: #aa7970;
+    color: #efe5dc;
 }
 
 .story-area.story-style-2 .story .story-content h2 {
@@ -260,7 +260,7 @@ Story-Area
 .story-icon span:before {
     font-size: 30px;
     line-height: 30px;
-    color: #aa7970;
+    color: #efe5dc;
 }
 
 .story-area.story-style-2 .story-icon span:before {
@@ -287,7 +287,7 @@ Story-Area
 }
 
 .story-area a.theme-btn:hover {
-    color: #aa7970;
+    color: #efe5dc;
 }
 
 .story-area.story-style-2 a.theme-btn:hover {

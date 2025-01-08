@@ -4,7 +4,7 @@
 
 .couple-img {
     overflow: hidden;
-    border: 2px solid #aa7970;
+    border: 2px solid #efe5dc;
     border-radius: 100%;
 }
 
@@ -27,12 +27,12 @@
 }
 
 .couple-wrap2.couple-s-3 .couple-text i {
-    color: #aa7970;
+    color: #efe5dc;
 }
 
 .couple-content h3 {
     font-size: 21px;
-    color: #aa7970;
+    color: #efe5dc;
     font-family: 'Muli', sans-serif;
     text-transform: uppercase;
 }
@@ -61,7 +61,7 @@
 
 .social-icon ul li a {
     font-size: 24px;
-    color: #aa7970;
+    color: #efe5dc;
 }
 
 .social-icon ul li {
