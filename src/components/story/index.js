@@ -54,7 +54,7 @@ const Story = () => {
                                             </div>
                                         </div>
                                         <h2>Knowing each other</h2>
-                                        <span className="date">August 2023</span>
+                                        <span className="date">May 2024</span>
                                         <p>Our first "Date" and getting interrogated by friends</p>
                                         <div className="story-button">
                                             <Link className="theme-btn" to="/" title="READ MORE">READ MORE</Link>
@@ -73,9 +73,9 @@ const Story = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h2>Our Marriage Proposal</h2>
-                                        <span className="date">Jan 10, 2018</span>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some,</p>
+                                        <h2>Kami na!</h2>
+                                        <span className="date">August 2024</span>
+                                        <p>The "Ligawan" stage is over, when Charm give the approval </p>
                                         <div className="story-button">
                                             <Link className="theme-btn" to="/" title="READ MORE">READ MORE</Link>
                                         </div>

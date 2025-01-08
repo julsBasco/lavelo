@@ -11,8 +11,8 @@ const Welcome = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="welcome-content">
-                            <h2>Welcome to our big day</h2>
-                            <p> Consequat elit non laboris deserunt amet excepteur. In cupidatat consectetur ad anim. Magna eu laborum est adipisicing duis excepteur Lorem id voluptate nostrud. </p>
+                            <h2>Welcome to Our Story</h2>
+                            <p>We have created this wedding website as a convenient and interactive way to share all of the important details with you leading up to our wedding. We cannot wait to celebrate this exciting new chapter of our lives together with you.</p>
                             <div className="btn"><AnchorLink href="#rsvp">RSVP</AnchorLink></div>
                             <LocationMap buttonClass={'location-btn'} />
                         </div>

@@ -1,4 +1,4 @@
-import React from  'react';
+import React from 'react';
 
 // components
 import Couple from '../../components/couple';
@@ -15,20 +15,20 @@ import Saveday from '../../components/countdown'
 
 
 const Homepage = () => {
-    return(
-       <div>
-           <Navbar/>
-           <SimpleSlider/>
-           <Saveday/>
-           <Couple/>
-           <Welcome/>
-           <Story/>
-           <People/>
-           <Location/>
-           <Gallery/>
-           <Rsvp/>
-           <Gift/>
-       </div>
+    return (
+        <div>
+            <Navbar />
+            <SimpleSlider />
+            <Saveday />
+            <Welcome />
+            <Couple />
+            <Story />
+            <People />
+            <Location />
+            <Gallery />
+            <Rsvp />
+            <Gift />
+        </div>
     )
 }
 

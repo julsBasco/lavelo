@@ -1,5 +1,6 @@
 .count-down-area {
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .countdownwrap {
@@ -101,7 +102,7 @@
 }
 
 .section-area {
-    background: url(https://media.istockphoto.com/id/176830145/photo/wedding-rings.jpg?s=612x612&w=0&k=20&c=AeZdAkKLzyCHwQdj4A0GPfwyZumaOJa0Z2jrDt_TRok=) no-repeat center center / cover;
+    background: url(../../images/counter/cover.JPG) no-repeat center center / cover;
     padding: 18px 0;
     position: relative;
     z-index: 1;
@@ -114,7 +115,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background: #aa7970db;
+    background: #aa797086;
     z-index: -1;
 }
 
