@@ -19,21 +19,21 @@ class SimpleSlider extends Component {
     };
     return (
       <Slider {...settings}>
-        {/* <div id="home" className="item1">
+        <div id="home" className="item1">
           <div className="container">
             <div className="slide-content">
               <div className="slide-subtitle">
                 <h4>WERE GETTING MARRIED</h4>
               </div>
               <div className="slide-title">
-                <h2></h2>
+                <h2>Julian and Charmaine</h2>
               </div>
               <div className="slide-text">
                 <p></p>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className="item2">
           <div className="container">
             <div className="container">

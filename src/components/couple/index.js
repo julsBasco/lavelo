@@ -22,16 +22,7 @@ const Couple = () => {
                                     <div className="couple-text">
                                         <div className="couple-content">
                                             <h3>Julian Basco</h3>
-                                            <p>Hello ako naman si Julian</p>
                                         </div>
-                                        {/* <div className="social-icon">
-                                            <ul className="d-flex">
-                                                <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                <li><Link to='/'><span className="fa fa-google-plus"></span></Link></li>
-                                                <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                            </ul>
-                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -48,16 +39,7 @@ const Couple = () => {
                                     <div className="couple-text">
                                         <div className="couple-content">
                                             <h3>Charmaine <span style={{ textDecoration: "line-through" }}>Calimpusan</span> Basco</h3>
-                                            <p>Hello ako po si Charm</p>
                                         </div>
-                                        {/* <div className="social-icon">
-                                            <ul className="d-flex">
-                                                <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                <li><Link to='/'><span className="fa fa-google-plus"></span></Link></li>
-                                                <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                            </ul>
-                                        </div> */}
                                     </div>
                                 </div>
                             </div>
