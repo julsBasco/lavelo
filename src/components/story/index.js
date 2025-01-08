@@ -95,7 +95,7 @@ const Story = () => {
                                         </div>
                                         <h2>The Proposal</h2>
                                         <span className="date">October 2024</span>
-                                        <p>I find it difficult to find the right timing to ask Charmaine but with the help of friends, Jehovah God really know how to save people from trouble (haha) jokes aside its as if Jehovah make sure that I asked Charm in the right venue, time and people. </p>
+                                        <p>I find it difficult to find the right timing to ask Charm but with the help of friends, Jehovah God really know how to save people from trouble (haha) jokes aside its as if Jehovah make sure that I asked Charm in the right venue, time and people. </p>
                                         <div className="story-button">
                                             <Link className="theme-btn" to="/" title="READ MORE">READ MORE</Link>
                                         </div>
