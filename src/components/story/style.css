@@ -8,6 +8,8 @@ Story-Area
     margin-bottom: 2em
 }
 
+.story-area {}
+
 .story-top,
 .story-bottom {
     position: absolute;

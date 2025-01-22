@@ -6,6 +6,7 @@ import Homepage3 from '../HomePage3'
 import Homepage4 from '../HomePage4'
 import BlogPage from '../blogpage'
 import BlogDetailsPage from '../BlogDetailsPage'
+import Rsvp from '../../components/rsvp';
 
 const AllRoute = () => {
 
@@ -15,11 +16,9 @@ const AllRoute = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path='/home' element={<Homepage />} />
-          <Route path='/home2' element={<Homepage2 />} />
-          <Route path='/home3' element={<Homepage3 />} />
-          <Route path='/home4' element={<Homepage4 />} />
-          <Route path='/Blog' element={<BlogPage />} />
-          <Route path='/Blog-details' element={<BlogDetailsPage />} />
+          <Route path='/rsvp' element={<Rsvp />} />
+          {/* <Route path='/Blog' element={<BlogPage />} /> */}
+          {/* <Route path='/Blog-details' element={<BlogDetailsPage />} /> */}
         </Routes>
       </BrowserRouter>
 

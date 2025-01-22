@@ -10,7 +10,6 @@
 .section-title h2:before {
     position: absolute;
     content: "";
-    background: url(../../images/section-title.png);
     width: 20%;
     height: 89%;
     bottom: -16px;

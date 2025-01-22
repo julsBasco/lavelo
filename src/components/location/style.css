@@ -60,12 +60,12 @@
 
 .ceromony-content h3 {
     font-size: 30px;
-    color: #efe5dc;
+    color: #636363;
     margin-bottom: 16px;
 }
 
 .ceromony-content .location-btn {
-    color: #efe5dc;
+    color: #636363;
     font-weight: 600;
     display: inline-block;
     max-width: 130px;
@@ -76,7 +76,7 @@
 
 .ceromony-content .btn.location-btn:hover {
     background: none !important;
-    color: #efe5dc;
+    color: #bababa;
 }
 
 .ceromony-content .location-btn:focus {
@@ -105,6 +105,10 @@
 .modal-body iframe {
     width: 800px;
     height: 500px;
+}
+
+.ceromony-img img {
+    aspect-ratio: 1 / 1
 }
 
 @media (max-width: 991px) {
