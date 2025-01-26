@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Sectiontitle from '../section-title'
 import couple3 from '../../images/couple/couple.jpg'
 import './style.css'
 
+
+
 const Couple = () => {
+
+
+
+
     return (
         <div id="couple" className="about-wrap">
             <div className="couple-area section-padding pb-70">
@@ -40,6 +46,7 @@ const Couple = () => {
                             <div className="col-lg-12 col-md-12 col-sm-12">
                                 <div className="couple-text">
                                     <h4>Who do you think would cry at the wedding ceremony?</h4>
+                                    <h3></h3>
                                 </div>
                                 <div className="couple-text">
                                     <h4></h4>
