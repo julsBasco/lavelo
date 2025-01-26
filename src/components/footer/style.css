@@ -24,7 +24,7 @@
 
 .content-sub {
   padding: 50px 80px;
-  background: rgba(94, 154, 142, .5);
+  background: rgba(239, 229, 220, 0.43);
   display: inline-block;
   z-index: 99;
   position: relative;
@@ -37,7 +37,7 @@
   top: -6px;
   width: 103%;
   height: 105%;
-  border: 1px solid rgba(255,255,255, 0.4);
+  border: 1px solid #63636382;
 }
 
 .content-sub h2 {
