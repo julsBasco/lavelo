@@ -56,8 +56,8 @@ const Index = ({ question }) => {
             // countUp(secondElement.querySelector(".btn-content"), 'Charmaine');
 
             if (answer1 > answer2) {
-                firstElement.classList.add("voted", "voted-green");
-                secondElement.classList.add("voted", "voted-red");
+                firstElement.classList.add("voted", "voted-red");
+                secondElement.classList.add("voted", "voted-green");
             } else if (answer1 < answer2) {
                 firstElement.classList.add("voted", "voted-red");
                 secondElement.classList.add("voted", "voted-green");
