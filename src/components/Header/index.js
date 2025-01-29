@@ -31,7 +31,6 @@ const Header = () => {
                                     <li><AnchorLink style={style} href='#people'>People</AnchorLink></li>
                                     <li><AnchorLink style={style} href='#event'>Events</AnchorLink></li>
                                     <li><AnchorLink style={style} href='#gallery'>Gallery</AnchorLink></li>
-                                    <li><AnchorLink style={style} href='#rsvp'>Rsvp</AnchorLink></li>
                                 </ul>
                             </div>
                         </div>
