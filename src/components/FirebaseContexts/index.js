@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore'
 import { collection, addDoc, getDocs } from "firebase/firestore";
 
 
-export const initializeFirestoreDB = async () => {
+export const initializeFirebase = () => {
     const firebaseConfig = {
         apiKey: "AIzaSyA2LxiZUeLk43oVjDT83pRGhTojcchRqj0",
         authDomain: "julianandcharmaine.firebaseapp.com",
@@ -16,6 +16,10 @@ export const initializeFirestoreDB = async () => {
     };
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
+}
+
+export const initializeFirestoreDB = async () => {
+
     // Initialize Cloud Firestore and get a reference to the service
     const db = getFirestore(app);
 

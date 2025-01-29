@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Sectiontitle from '../section-title'
 import couple3 from '../../images/couple/couple.jpg'
+import Poll from '../poll/Index.js'
 import './style.css'
 
 
@@ -24,35 +25,18 @@ const Couple = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="col-lg-2 col-md-12 couple-single">
-                                <div className="couple-img">
-                                    <img src={couple3} alt="thumb" />
-                                </div>
-                            </div> */}
-                            {/* <div className="col-lg-5 col-md-12 col-sm-12 couple-single">
-                                <div className="couple-wrap couple-wrap-3">
-                                    <div className="couple-img couple-img-2">
-                                        <img src={couple2} alt="thumb" />
-                                    </div>
-                                    <div className="couple-text">
-                                        <div className="couple-content">
-                                            <h3>Charmaine <span style={{ textDecoration: "line-through" }}>Calimpusan</span> Basco</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
+
                         </div>
                         <div className="row justify-content-center">
                             <div className="col-lg-12 col-md-12 col-sm-12">
                                 <div className="couple-text">
-                                    <h4>Who do you think would cry at the wedding ceremony?</h4>
-                                    <h3></h3>
+                                    <Poll question='Who do you think would cry at the wedding ceremony?' />
                                 </div>
                                 <div className="couple-text">
-                                    <h4></h4>
+                                    <Poll question='Who is the worry wart?' />
                                 </div>
                                 <div className="couple-text">
-                                    <h4>Who's the worry wart?</h4>
+                                    <Poll question='Who initiates the first date?' />
                                 </div>
                             </div>
 

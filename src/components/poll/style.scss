@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;900&family=Special+Elite&display=swap");
+
+$primary: #f10102;
+$green: #55a630;
+$default: #d1d5da;
+$defaultBg: #2f363d;
+$dark: #c9d1d9;
+$darkBg: #0d1117;
+
+$easingFunction: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+* {
+    box-sizing: border-box;
+}
+
+.sr-only {
+    visibility: hidden;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+
+.challenge-title {
+    text-align: center;
+    padding: 0;
+    margin: 1rem 0 0.5rem;
+    color: $primary;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.challenge-subtitle {
+    text-align: center;
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: darken($default, 10%);
+}
+
+.challenge-part-of {
+    text-align: center;
+    margin: 1rem 0 0;
+    font-size: 0.875rem;
+    color: darken($default, 10%);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    a,
+    a:visited {
+        color: darken($default, 10%);
+        text-decoration-style: wavy;
+
+        &:hover,
+        &:active {
+            color: lighten(darken($default, 10%), 10%);
+        }
+    }
+}
+
+.poll-container {
+    margin: 2rem 0 0;
+    padding: 2rem;
+
+    .poll-question {
+        color: $primary;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.875rem;
+    }
+
+    .poll-answers {
+        color: white;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .btn-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+
+        .btn {
+            flex: 1 1 auto;
+            background-color: rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(5px);
+            font-size: 1.5rem;
+            padding: 0;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-overflow: ellipse;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            height: 94px;
+            transition: all 0.3s $easingFunction;
+
+            &.voted {
+                cursor: default;
+            }
+
+            &.voted-green {
+                background-color: transparentize($green, 0.65);
+                border: 1px solid transparentize($green, 0.7);
+
+                &:hover {
+                    background-color: transparentize($green, 0.5);
+                }
+            }
+
+            &.voted-red {
+                background-color: transparentize($primary, 0.65);
+                border: 1px solid transparentize($primary, 0.7);
+
+                &:hover {
+                    background-color: transparentize($primary, 0.5);
+                }
+            }
+
+            span {
+                pointer-events: none;
+            }
+
+            .svg-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100px;
+                height: 100px;
+                transform: translate(-50%, -50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: -1;
+                transition: inherit;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &:hover {
+                background-color: rgba(165, 165, 165, 0.5);
+            }
+
+            &:focus {
+                outline: 0;
+            }
+
+            .btn-content {
+                display: block;
+                padding: 2rem;
+            }
+
+            &:first-of-type {
+                border-radius: 1rem 0 0 1rem;
+                border-right: 1px solid rgba(0, 0, 0, 0.3);
+                width: 50%;
+            }
+
+            &:last-of-type {
+                border-radius: 0 1rem 1rem 0;
+                border-left: 1px solid rgba(0, 0, 0, 0.3);
+                width: 50%;
+            }
+        }
+    }
+}
+
+.doesnt-matter-container {
+    margin: 2rem 0;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
