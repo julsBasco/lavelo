@@ -52,8 +52,7 @@ const Index = ({ question }) => {
                 fill: "forwards"
             });
 
-            // countUp(firstElement.querySelector(".btn-content"), 'Julian');
-            // countUp(secondElement.querySelector(".btn-content"), 'Charmaine');
+
 
             if (answer1 > answer2) {
                 firstElement.classList.add("voted", "voted-red");

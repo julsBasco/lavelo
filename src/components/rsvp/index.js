@@ -1,140 +1,139 @@
-import React, { Component } from 'react';
+
+import React, { useState, useEffect, useCallback } from 'react'
+import { useDB } from '../FirebaseContexts/DBContext'
 import './style.css'
+import { useParams } from 'react-router-dom'
 
-class Rsvp extends Component {
 
-    state = {
-        name: '',
-        email: '',
-        rsvp: '',
-        events: '',
-        notes: '',
-        error: {}
+
+const Rsvp = () => {
+    const [isLoading, setLoading] = useState(true)
+    const [submitLoading, setSubmitLoading] = useState(false)
+    const [rsvp, setRsvp] = useState([])
+    const [selectedOption, setSelectedOption] = useState(null);
+    const { fetchRSVP, updateRSVP } = useDB();
+    let { id } = useParams();
+
+    const fetchRSVPs = useCallback(async () => {
+        const getRSVP = await fetchRSVP(id);
+
+        setRsvp(getRSVP)
+
+        setLoading(false)
+    }, [fetchRSVP])
+
+    const handleCheckboxChange = (event) => {
+        setSelectedOption(event.target.id);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        let rsvpResponse = {};
+
+        if (selectedOption === 'option1') {
+            rsvpResponse = {
+                ceremony: true,
+                reception: true,
+                zoom: false
+            }
+        }
+        if (selectedOption === 'option2') {
+            rsvpResponse = {
+                ceremony: true,
+                reception: false,
+                zoom: false
+            }
+        }
+        if (selectedOption === 'option2') {
+            rsvpResponse = {
+                ceremony: false,
+                reception: false,
+                zoom: true
+            }
+        }
+        try {
+            setSubmitLoading(true)
+            updateRSVP(id, rsvpResponse)
+        } catch {
+            setSubmitLoading(false)
+        }
+
     }
+    useEffect(() => {
+        fetchRSVPs()
+    }, [])
 
 
-    changeHandler = (e) => {
-        const error = this.state.error;
-        error[e.target.name] = ''
 
-        this.setState({
-            [e.target.name]: e.target.value,
-            error
-        })
-    }
-
-    subimtHandler = (e) => {
-        e.preventDefault();
-
-        const { name,
-            email,
-            rsvp,
-            events,
-            notes, error } = this.state;
-
-        if (name === '') {
-            error.name = "Please enter your name";
-        }
-        if (email === '') {
-            error.email = "Please enter your email";
-        }
-        if (rsvp === '') {
-            error.rsvp = "Select your number of rsvp";
-        }
-        if (events === '') {
-            error.events = "Select your event list";
-        }
-        if (notes === '') {
-            error.notes = "Please enter your note";
-        }
-
-
-        if (error) {
-            this.setState({
-                error
-            })
-        }
-        if (error.name === '' && error.email === '' && error.email === '' && error.rsvp === '' && error.events === '' && error.notes === '') {
-            this.setState({
-                name: '',
-                email: '',
-                rsvp: '',
-                events: '',
-                notes: '',
-                error: {}
-            })
-        }
-
-        console.log(this.state);
-        console.log(this.state.error.notes);
-    }
-
-    render() {
-
-        const { name,
-            email,
-            rsvp,
-            events,
-            notes, error } = this.state;
-        return (
-            <div id="rsvp" className="rsvp-area go-rsvp-area section-padding">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                            <div className="rsvp-wrap">
-                                <div className="col-12">
-                                    <div className="section-title section-title4 text-center">
-                                        <h2>Be Our Guest</h2>
-                                        <p>Please reserve before April 23rd, 2025.</p>
-                                    </div>
+    return (
+        <div id="rsvp" className="rsvp-area go-rsvp-area section-padding">
+            {isLoading ? <h2></h2> : <div className="container">
+                <div className="row">
+                    <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                        <div className="rsvp-wrap">
+                            <div className="col-12">
+                                <div className="section-title section-title4 text-center">
+                                    <h2>Be Our Guest</h2>
+                                    <p>Please reserve before April 23rd, 2025.</p>
                                 </div>
-                                <form onSubmit={this.subimtHandler}>
-                                    <div className="contact-form form-style">
-                                        <div className="row">
-                                            <div className="col-12 col-sm-6">
-                                                <input type="text" value={name} onChange={this.changeHandler} placeholder="Your Name*" id="fname" name="name" />
-                                                <p>{error.name ? error.name : ''}</p>
-                                            </div>
-                                            <div className="col-12  col-sm-6">
-                                                <input type="text" placeholder="Your Email*" onChange={this.changeHandler} value={email} id="email" name="email" />
-                                                <p>{error.email ? error.email : ''}</p>
-                                            </div>
-                                            <div className="col col-sm-6 col-12">
-                                                <select className="form-control" onChange={this.changeHandler} value={rsvp} name="rsvp">
-                                                    <option disabled value="">Number Of rsvp*</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                                <p>{error.rsvp ? error.rsvp : ''}</p>
-                                            </div>
-                                            <div className="col col-sm-6 col-12">
-                                                <select className="form-control" onChange={this.changeHandler} value={events} name="events">
-                                                    <option disabled value="">I Am Attending*</option>
-                                                    <option value="1">Al events</option>
-                                                    <option value="2">Wedding ceremony</option>
-                                                    <option value="3">Reception party</option>
-                                                </select>
-                                                <p>{error.events ? error.events : ''}</p>
-                                            </div>
-                                            <div className="col-12 col-sm-12">
-                                                <textarea className="contact-textarea" value={notes} onChange={this.changeHandler} placeholder="Message" name="notes"></textarea>
-                                                <p>{error.notes ? error.notes : ''}</p>
-                                            </div>
+                            </div>
+                            <form onSubmit={handleSubmit}>
+                                <div className="contact-form form-style">
+                                    {rsvp ? rsvp.spiel : <></>}
+                                    {submitLoading ? <div className='text-center mt-5'>Your Response is submitted</div> : <div>
+                                        <div>
+                                            <input
+                                                className="checkbox-style"
+                                                type="checkbox"
+                                                id="option1"
+                                                checked={selectedOption === 'option1'}
+                                                onChange={handleCheckboxChange}
+                                            />
+                                            <label className="form-check-label" htmlFor="option1">
+                                                We accept the invitation (Ceremony Only and Reception)
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                className="checkbox-style"
+                                                type="checkbox"
+                                                id="option2"
+                                                checked={selectedOption === 'option2'}
+                                                onChange={handleCheckboxChange}
+                                            />
+                                            <label className="form-check-label" htmlFor="option2">
+                                                We accept the invitation (Ceremony Only)
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                className="checkbox-style"
+                                                type="checkbox"
+                                                id="option3"
+                                                checked={selectedOption === 'option3'}
+                                                onChange={handleCheckboxChange}
+                                            />
+                                            <label className="form-check-label" htmlFor="option3">
+                                                No we can't make it in person (Please send zoom invite)
+                                            </label>
                                         </div>
                                         <div className="col-12 text-center">
                                             <button id="submit" type="submit" className="submit">Send Invitation</button>
                                         </div>
-                                    </div>
-                                </form>
-                            </div>
+                                    </div>}
+
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-        )
-    }
+            </div>}
+
+        </div>
+
+    )
 }
 
-export default Rsvp;
+export default Rsvp
+
+
