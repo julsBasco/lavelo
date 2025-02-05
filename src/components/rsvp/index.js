@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { useDB } from '../FirebaseContexts/DBContext'
 import './style.css'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
 
 
@@ -13,6 +13,7 @@ const Rsvp = () => {
     const [selectedOption, setSelectedOption] = useState(null);
     const { fetchRSVP, updateRSVP } = useDB();
     let { id } = useParams();
+    let navigate = useNavigate()
 
     const fetchRSVPs = useCallback(async () => {
         const getRSVP = await fetchRSVP(id);
@@ -54,6 +55,10 @@ const Rsvp = () => {
         try {
             setSubmitLoading(true)
             updateRSVP(id, rsvpResponse)
+            setTimeout(() => {
+                setSubmitLoading(false)
+                navigate('/')
+            }, 1000)
         } catch {
             setSubmitLoading(false)
         }

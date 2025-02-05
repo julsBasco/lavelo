@@ -1,9 +1,10 @@
 .rsvp-area {
-    background: linear-gradient(rgba(100, 158, 147, 0.50), rgba(100, 158, 147, 0.50)), transparent url(../../images/rsvp.JPG) center center/cover no-repeat fixed;
+    background: linear-gradient(rgba(169, 203, 241, 0.3), rgba(141, 104, 104, 0.3)), transparent url(../../images/rsvp.JPG) center center/cover no-repeat fixed;
     padding: 100px 0;
     position: relative;
     background-attachment: fixed;
     z-index: 1;
+    height: 100vh;
 }
 
 .rsvp-wrap {

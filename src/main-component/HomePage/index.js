@@ -10,6 +10,8 @@ import Gallery from '../../components/gallery';
 import Gift from '../../components/gift';
 import Navbar from '../../components/Navbar'
 import Saveday from '../../components/countdown'
+import Footer from '../../components/footer'
+import Scrollbar from '../../components/scrollbar'
 
 
 const Homepage = () => {
@@ -24,6 +26,8 @@ const Homepage = () => {
             <Location />
             <Gallery />
             <Gift />
+            <Footer />
+            <Scrollbar />
         </div>
     )
 }

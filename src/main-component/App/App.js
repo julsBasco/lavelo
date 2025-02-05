@@ -5,13 +5,12 @@ import './App.css';
 import AllRoute from '../router';
 
 
-const App = () => { 
+const App = () => {
 
   return (
     <div className="App">
-        <AllRoute/>
-        <Footer/>
-        <Scrollbar/>
+      <AllRoute />
+
     </div>
   );
 }
