@@ -42,8 +42,18 @@ export const DBProvider = ({ children }) => {
         await updateDoc(docRef, data);
     }
 
+    const addComment = async (commentData) => {
+        const commentsCollection = collection(db, 'comments')
+        await addDoc(commentsCollection, commentData)
+    }
+
+    const value = {
+        addComment, data, setData, loading, fetchRSVP, updateRSVP
+        // other functions like fetchRSVP, updateRSVP
+    }
+
     return (
-        <DBContext.Provider value={{ data, setData, loading, fetchRSVP, updateRSVP }}>
+        <DBContext.Provider value={value}>
             {children}
         </DBContext.Provider>
     )

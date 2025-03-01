@@ -27,7 +27,7 @@ const Rsvp = () => {
         setSelectedOption(event.target.id);
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         let rsvpResponse = {};
 
@@ -54,7 +54,7 @@ const Rsvp = () => {
         }
         try {
             setSubmitLoading(true)
-            updateRSVP(id, rsvpResponse)
+            await updateRSVP(id, rsvpResponse)
             setTimeout(() => {
                 setSubmitLoading(false)
                 navigate('/')
@@ -79,7 +79,6 @@ const Rsvp = () => {
                             <div className="col-12">
                                 <div className="section-title section-title4 text-center">
                                     <h2>Be Our Guest</h2>
-                                    <p>Please reserve before April 23rd, 2025.</p>
                                 </div>
                             </div>
                             <form onSubmit={handleSubmit}>

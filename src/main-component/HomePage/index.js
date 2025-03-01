@@ -8,6 +8,7 @@ import Welcome from '../../components/welcome-area';
 import Location from '../../components/location';
 import Gallery from '../../components/gallery';
 import Gift from '../../components/gift';
+import MessageWall from '../../components/MessageWall';
 import Navbar from '../../components/Navbar'
 import Saveday from '../../components/countdown'
 import Footer from '../../components/footer'
@@ -26,6 +27,7 @@ const Homepage = () => {
             <Location />
             <Gallery />
             <Gift />
+            <MessageWall />
             <Footer />
             <Scrollbar />
         </div>
