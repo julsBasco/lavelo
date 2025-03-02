@@ -53,16 +53,7 @@ const MessageWall = () => {
                                     required
                                 />
                             </div>
-                            <div className="form-group mt-5">
-                                <label htmlFor="email">Your Email (optional):</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    className="form-control"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                />
-                            </div>
+
                             <div className="form-group mt-5">
                                 <label htmlFor="comment">Your Comment:</label>
                                 <textarea

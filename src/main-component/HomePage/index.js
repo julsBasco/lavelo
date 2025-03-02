@@ -26,8 +26,8 @@ const Homepage = () => {
             <Story />
             <Location />
             <Gallery />
-            <Gift />
             <MessageWall />
+            <Gift />
             <Footer />
             <Scrollbar />
         </div>

@@ -39,7 +39,7 @@ const Gallery = (props) => {
 
   return (
     <div id="gallery" className="Gallery-section section-padding pb-70">
-      <Sectiontitle section={'Our Gallary'} />
+      <Sectiontitle section={'Our Gallery'} />
       <div className="container">
         <div className="row">
           <ResponsiveMasonry columnsCountBreakPoints={{ 575: 1, 750: 3, 900: 3 }}>

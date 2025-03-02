@@ -54,7 +54,7 @@ Story-Area
     left: 50%;
     height: 97%;
     width: 4px;
-    background: #E8EFED;
+    background: #efe5dc;
 }
 
 .story-area.story-style-2 .story .content-wrapper::before {
@@ -236,10 +236,8 @@ Story-Area
     font-size: 18px;
     line-height: 60px;
     border-radius: 50%;
-    background: #E8EFED;
-    content: "\f108";
-    font-family: "Flaticon";
-    border: 5px solid #d9ece7;
+    background: #c0b2a6;
+    border: 5px solid #efe5dc;
 }
 
 .story-area.story-style-2 .story .story-icon {
@@ -254,7 +252,6 @@ Story-Area
     line-height: 60px;
     border-radius: 50%;
     background: #9a8c4061;
-    content: "\f108";
     font-family: "Flaticon";
     border: 5px solid #9a8c403b;
 }

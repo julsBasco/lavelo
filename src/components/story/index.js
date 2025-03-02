@@ -23,7 +23,6 @@ const Story = () => {
                             <div className="content-wrapper">
                                 <div className="item">
                                     <div className="story-icon">
-                                        <span className="flaticon-birds-in-love"></span>
                                     </div>
                                     <div className="story-content">
                                         <div className="image-wrap">
@@ -36,14 +35,12 @@ const Story = () => {
                                         <h2>How we met</h2>
                                         <span className="date">February 2023</span>
                                         <p>Charm and I met in the Philippine Branch Construction project.</p>
-                                        <div className="story-button">
-                                            <Link className="theme-btn" to="/" title="READ MORE">READ MORE</Link>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="story-icon">
-                                        <span className="flaticon-birds-in-love"></span>
+
                                     </div>
                                     <div className="story-content">
                                         <div className="image-wrap">
@@ -56,14 +53,12 @@ const Story = () => {
                                         <h2>Knowing each other</h2>
                                         <span className="date">May 2024</span>
                                         <p>Our first "Date" and getting interrogated by friends</p>
-                                        <div className="story-button">
-                                            <Link className="theme-btn" to="/" title="READ MORE">READ MORE</Link>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="story-icon">
-                                        <span className="flaticon-birds-in-love"></span>
+
                                     </div>
                                     <div className="story-content">
                                         <div className="image-wrap">
@@ -76,14 +71,12 @@ const Story = () => {
                                         <h2>Kami na!</h2>
                                         <span className="date">August 2024</span>
                                         <p>The "Ligawan" stage is over, when Charm give the approval </p>
-                                        <div className="story-button">
-                                            <Link className="theme-btn" to="/" title="READ MORE">READ MORE</Link>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="story-icon">
-                                        <span className="flaticon-birds-in-love"></span>
+
                                     </div>
                                     <div className="story-content">
                                         <div className="image-wrap">
@@ -96,13 +89,34 @@ const Story = () => {
                                         <h2>The Proposal</h2>
                                         <span className="date">October 2024</span>
                                         <p>I find it difficult to find the right timing to ask Charm but with the help of friends, Jehovah God really know how to save people from trouble (haha) jokes aside its as if Jehovah make sure that I asked Charm in the right venue, time and people. </p>
-                                        <div className="story-button">
-                                            <Link className="theme-btn" to="/" title="READ MORE">READ MORE</Link>
+
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <div className="story-icon">
+
+                                    </div>
+                                    <div className="story-content">
+                                        <div className="image-wrap">
+                                            <div className="single-image">
+                                                <div>
+                                                    <img src={strory4} alt="" />
+                                                </div>
+                                            </div>
                                         </div>
+                                        <h2>The Wedding</h2>
+
+                                        <div className='text-center'>
+
+                                            <span className="date">April 2025</span>
+                                            <p>See you there!</p>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div className="story-bottom"></div>
+                            <div className="story-bottom">
+                            </div>
                         </div>
                     </div>
                 </div>

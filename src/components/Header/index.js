@@ -21,14 +21,13 @@ const Header = () => {
         <div className="Header_root">
             <div className="header">
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-9">
+                    <div className="row align-items-center justify-content-center">
+                        <div className="">
                             <div className="header-menu d-lg-block d-none">
-                                <ul className="mobail-menu d-flex">
+                                <ul className="mobail-menu d-flex justify-content-center">
                                     <li><AnchorLink style={style} href='#home'>Home</AnchorLink></li>
                                     <li><AnchorLink style={style} href='#couple'>Couple</AnchorLink></li>
                                     <li><AnchorLink style={style} href='#story'>Story</AnchorLink></li>
-                                    <li><AnchorLink style={style} href='#people'>People</AnchorLink></li>
                                     <li><AnchorLink style={style} href='#event'>Events</AnchorLink></li>
                                     <li><AnchorLink style={style} href='#gallery'>Gallery</AnchorLink></li>
                                 </ul>
